@@ -1,4 +1,4 @@
-# Header
+﻿# Header
 
 menu:
   主页: /
@@ -6,18 +6,18 @@ menu:
 
 # SubNav
 subnav:
-  github: "#"
-  weibo: "#"
-  rss: "#"
-  zhihu: "#"
-  #qq: "#"
-  #weixin: "#"
+  github: "https://github.com/82-Deluxe/82-Deluxe.github.io.git"
+  #weibo: "#"
+  #rss: "#"
+  #zhihu: "#"
+  qq: "2857312499"
+  weixin: "2857312499"
   #jianshu: "#"
   #douban: "#"
   #segmentfault: "#"
   #bilibili: "#"
   #acfun: "#"
-  #mail: "mailto:litten225@qq.com"
+  mail: "dx2857@qq.com"
   #facebook: "#"
   #google: "#"
   #twitter: "#"
@@ -68,7 +68,7 @@ google_analytics: ''
 favicon: /favicon.png
 
 #你的头像url
-avatar:
+avatar:https://image.baidu.com/search/wiseala?tn=wiseala&active=1&ie=utf8&from=index&fmpage=index&pos=history&word=null&pn=16&adtype=&adid=&rpn=-1&spn=&gsm=5a&simid=3481989588%2C211779488&u=973212534&di=145680118210&os=1635645814%2C3371773611&adpicid=&pi=&bdtype=&objurl=http%3A%2F%2Fupload.chinaz.com%2F2016%2F0331%2F1459418705836.png#!search
 
 #是否开启分享
 share_jia: true
@@ -116,7 +116,7 @@ slider:
 #  friends: false
 smart_menu:
   innerArchive: '所有文章'
-  friends: '友链'
+  #friends: '友链'
   aboutme: '关于我'
 
 friends:
@@ -127,4 +127,4 @@ friends:
   友情链接5: http://localhost:4000/
   友情链接6: http://localhost:4000/
 
-aboutme: 很惭愧<br><br>只做了一点微小的工作<br>谢谢大家
+aboutme: 这是我做的第一个博客\n还有许多不懂得\n我会慢慢学会
