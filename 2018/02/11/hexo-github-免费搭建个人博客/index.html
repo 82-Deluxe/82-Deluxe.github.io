@@ -17,7 +17,7 @@
 <meta property="og:description" content="新手使用hexo+giehub搭建个人博客，尽量简单的说明">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="http://p3z6sclgk.bkt.clouddn.com/18-2-11/95395899.jpg">
-<meta property="og:updated_time" content="2018-02-11T10:12:43.453Z">
+<meta property="og:updated_time" content="2018-02-11T10:25:21.137Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="hexo+github 免费搭建个人博客">
 <meta name="twitter:description" content="新手使用hexo+giehub搭建个人博客，尽量简单的说明">
@@ -174,16 +174,23 @@
     <div class="article-entry" itemprop="articleBody">
       
         <p>新手使用hexo+giehub搭建个人博客，尽量简单的说明</p>
+<a id="more"></a>
 <h2 id="第一步，下载安装git-for-windows，Node-js"><a href="#第一步，下载安装git-for-windows，Node-js" class="headerlink" title="第一步，下载安装git for windows，Node.js"></a>第一步，下载安装<a href="https://git-scm.com/downloads" target="_blank" rel="noopener">git for windows</a>，<a href="https://nodejs.org/en/download/" target="_blank" rel="noopener">Node.js</a></h2><p>安装直接下一步就行。</p>
 <h3 id="打开cmd命令行-win-r-输入cmd回车-分别执行"><a href="#打开cmd命令行-win-r-输入cmd回车-分别执行" class="headerlink" title="打开cmd命令行(win+r 输入cmd回车)分别执行"></a>打开cmd命令行(win+r 输入cmd回车)分别执行</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm -v</span><br></pre></td></tr></table></figure>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">node -v</span><br></pre></td></tr></table></figure>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git --version</span><br></pre></td></tr></table></figure>
-<p>会得到<img src="http://p3z6sclgk.bkt.clouddn.com/18-2-11/95395899.jpg" alt="版本信息"></p>
+<p>会得到版本信息</p>
+<p><img src="http://p3z6sclgk.bkt.clouddn.com/18-2-11/95395899.jpg" alt="版本信息"></p>
 <p>如果都可以成功运行出现版本信息证明安装成功。 </p>
 <h2 id="第二步，安装HEXO"><a href="#第二步，安装HEXO" class="headerlink" title="第二步，安装HEXO"></a>第二步，安装HEXO</h2><h3 id="打开CMD执行"><a href="#打开CMD执行" class="headerlink" title="打开CMD执行"></a>打开CMD执行</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-cli -g</span><br></pre></td></tr></table></figure>
 <p>等待安装完成后，输入</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo -v</span><br></pre></td></tr></table></figure>
-<h3 id="请检查是否安装成功，如果成功则继续下一步，不成的话，只能请你重新开始了！！"><a href="#请检查是否安装成功，如果成功则继续下一步，不成的话，只能请你重新开始了！！" class="headerlink" title="请检查是否安装成功，如果成功则继续下一步，不成的话，只能请你重新开始了！！"></a>请检查是否安装成功，如果成功则继续下一步，不成的话，只能请你重新开始了！！</h3><h2 id="第三步，部署Github"><a href="#第三步，部署Github" class="headerlink" title="第三步，部署Github"></a>第三步，部署Github</h2>
+<h3 id="请检查是否安装成功，如果成功则继续下一步，不成的话，只能请你重新开始了！！"><a href="#请检查是否安装成功，如果成功则继续下一步，不成的话，只能请你重新开始了！！" class="headerlink" title="请检查是否安装成功，如果成功则继续下一步，不成的话，只能请你重新开始了！！"></a>请检查是否安装成功，如果成功则继续下一步，不成的话，只能请你重新开始了！！</h3><h2 id="第三步，部署Github"><a href="#第三步，部署Github" class="headerlink" title="第三步，部署Github"></a>第三步，部署Github</h2><h2 id="1-注册登陆。。。。。。。此处省略"><a href="#1-注册登陆。。。。。。。此处省略" class="headerlink" title="1.注册登陆。。。。。。。此处省略"></a>1.注册登陆。。。。。。。此处省略</h2><h2 id="2-新建储存库"><a href="#2-新建储存库" class="headerlink" title="2.新建储存库"></a>2.新建储存库</h2><p>点击右上角的 “+” 号</p>
+<p><a href="http://p3z6sclgk.bkt.clouddn.com/18-2-11/77291157.jpg" target="_blank" rel="noopener">+</a></p>
+<p>选择New repository，下一步 </p>
+<p>在Repository name下面填写你要创建的地址，这个地址是就是你的域名，以github.io结尾。</p>
+<h2 id="例如填写123-github-io-那你的博客地址就是123-github-io"><a href="#例如填写123-github-io-那你的博客地址就是123-github-io" class="headerlink" title="**例如填写123.github.io,那你的博客地址就是123.github.io"></a>**例如填写123.github.io,那你的博客地址就是123.github.io</h2><p>完成创建</p>
+
       
 
       
