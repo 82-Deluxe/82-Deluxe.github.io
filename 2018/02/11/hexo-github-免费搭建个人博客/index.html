@@ -28,7 +28,7 @@
 <meta property="og:image" content="http://p3z6sclgk.bkt.clouddn.com/18-2-11/54906126.jpg">
 <meta property="og:image" content="http://p3z6sclgk.bkt.clouddn.com/18-2-11/2693015.jpg">
 <meta property="og:image" content="http://p3z6sclgk.bkt.clouddn.com/18-2-11/47676690.jpg">
-<meta property="og:updated_time" content="2018-02-11T13:25:53.065Z">
+<meta property="og:updated_time" content="2018-02-12T08:02:02.430Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="hexo+github 免费搭建个人博客">
 <meta name="twitter:description" content="新手使用hexo+giehub搭建个人博客，尽量简单的说明">
@@ -190,67 +190,83 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>使用hexo+giehub搭建免费的个人博客，完全免费！！！</p>
-<p>这是我搭建的<a href="https://82-deluxe.github.io/">博客</a>，可以先做个模板。</p>
+        <p>使用<strong>hexo+github</strong>搭建免费的个人博客，完全免费！！！</p>
 <a id="more"></a>
+<h2 id="前言-介绍"><a href="#前言-介绍" class="headerlink" title="前言 介绍:"></a>前言 介绍:</h2><h3 id="Github"><a href="#Github" class="headerlink" title="Github"></a>Github</h3><blockquote>
+<p>*GitHub可以免费创建不限数量的“公开”代码仓库，有1G的免费容量，但一般情况下够用，毕竟只要控制好图片大小，一篇博客的大小也不过几百KB</p>
+<p><strong>* 如果不想公开代码，或者你的代码占用存储空间比较多，你也可以选择成为付费的会员。 </strong></p>
+</blockquote>
+<h3 id="hexo"><a href="#hexo" class="headerlink" title="hexo"></a>hexo</h3><blockquote>
+<p>*hexo生成的属于静态网站，体积小，网站的性能更优，而且纯静态的方便网站的seo</p>
+<p><em>hexo关于文章的保存，完全是md文档格式，可以更方便的备份和转移。且可以保存在github的免费仓库下，国内访问速度挺快，而且<em>* 免费 </em></em>。</p>
+<p>*hexo搭建出来的是轻量级博客，但是做个人博客还是足够的，一些功能利用一些第三方网站的服务就可以实现。</p>
+</blockquote>
+<p><br></p>
+<h3 id="话不多说，下面就来实地操作下"><a href="#话不多说，下面就来实地操作下" class="headerlink" title="话不多说，下面就来实地操作下"></a>话不多说，下面就来实地操作下</h3><ul>
+<li>以下内容来自网络收集，感谢那些给予我帮助的人。</li>
+</ul>
+<p>这是我搭建的<a href="https://82-deluxe.github.io/">博客</a>，可以先做个模板。</p>
 <h2 id="第一步，下载安装git-for-windows，Node-js"><a href="#第一步，下载安装git-for-windows，Node-js" class="headerlink" title="第一步，下载安装git for windows，Node.js"></a>第一步，下载安装<a href="https://git-scm.com/downloads" target="_blank" rel="noopener">git for windows</a>，<a href="https://nodejs.org/en/download/" target="_blank" rel="noopener">Node.js</a></h2><p><br></p>
 <p>安装直接下一步就行。</p>
 <p><br></p>
-<h3 id="打开cmd命令行-win-r-输入cmd回车-分别执行"><a href="#打开cmd命令行-win-r-输入cmd回车-分别执行" class="headerlink" title="打开cmd命令行(win+r 输入cmd回车)分别执行"></a>打开cmd命令行(win+r 输入cmd回车)分别执行</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm -v</span><br></pre></td></tr></table></figure>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">node -v</span><br></pre></td></tr></table></figure>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git --version</span><br></pre></td></tr></table></figure>
+<h3 id="打开cmd命令行-win-r-输入cmd回车-分别执行"><a href="#打开cmd命令行-win-r-输入cmd回车-分别执行" class="headerlink" title="打开cmd命令行(win+r 输入cmd回车)分别执行"></a>打开<code>cmd命令行(win+r 输入cmd回车)</code>分别执行</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">npm -v</span><br><span class="line"></span><br><span class="line">node -v</span><br><span class="line"></span><br><span class="line">git --version</span><br></pre></td></tr></table></figure>
 <p>会得到版本信息</p>
 <p><img src="http://p3z6sclgk.bkt.clouddn.com/18-2-11/95395899.jpg" alt="版本信息"></p>
 <font color="#B8860B">如果都可以成功运行出现版本信息证明安装成功。</font> 
 
-<p><br><br><br><br><br></p>
+<p><br><br><br></p>
 <h2 id="第二步，安装HEXO"><a href="#第二步，安装HEXO" class="headerlink" title="第二步，安装HEXO"></a>第二步，安装HEXO</h2><p><br></p>
-<h3 id="打开CMD执行"><a href="#打开CMD执行" class="headerlink" title="打开CMD执行"></a>打开CMD执行</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-cli -g</span><br></pre></td></tr></table></figure>
+<h3 id="打开CMD执行"><a href="#打开CMD执行" class="headerlink" title="打开CMD执行"></a>打开<code>CMD</code>执行</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-cli -g</span><br></pre></td></tr></table></figure>
 <p>等待安装完成后，输入</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo -v</span><br></pre></td></tr></table></figure>
 <p><br></p>
-<h3 id="请检查是否安装成功，如果成功则继续下一步，不成的话，只能请你重新开始了！！"><a href="#请检查是否安装成功，如果成功则继续下一步，不成的话，只能请你重新开始了！！" class="headerlink" title="请检查是否安装成功，如果成功则继续下一步，不成的话，只能请你重新开始了！！"></a><font color="#B8860B">请检查是否安装成功，如果成功则继续下一步，不成的话，只能请你重新开始了！！</font></h3><p><br><br><br><br><br></p>
+<h3 id="请检查是否安装成功，如果成功则继续下一步，不成的话，只能请你重新开始了！！"><a href="#请检查是否安装成功，如果成功则继续下一步，不成的话，只能请你重新开始了！！" class="headerlink" title="请检查是否安装成功，如果成功则继续下一步，不成的话，只能请你重新开始了！！"></a><font color="#B8860B">请检查是否安装成功，如果成功则继续下一步，不成的话，只能请你重新开始了！！</font></h3><p><br><br><br></p>
 <h2 id="第三步，部署Github"><a href="#第三步，部署Github" class="headerlink" title="第三步，部署Github"></a>第三步，部署Github</h2><p><br></p>
-<h3 id="1-注册登陆。。。。。。。此处省略"><a href="#1-注册登陆。。。。。。。此处省略" class="headerlink" title="1.注册登陆。。。。。。。此处省略"></a>1.注册登陆。。。。。。。此处省略</h3><h3 id="2-新建储存库"><a href="#2-新建储存库" class="headerlink" title="2.新建储存库"></a>2.新建储存库</h3><p>点击右上角的 “+” 号</p>
+<h3 id="1-注册登陆。。。。。。。此处省略"><a href="#1-注册登陆。。。。。。。此处省略" class="headerlink" title="1.注册登陆。。。。。。。此处省略"></a>1.注册登陆。。。。。。。此处省略</h3><h3 id="2-新建储存库"><a href="#2-新建储存库" class="headerlink" title="2.新建储存库"></a>2.新建储存库</h3><ul>
+<li>点击右上角的 “+” 号</li>
+</ul>
 <p><img src="http://p3z6sclgk.bkt.clouddn.com/18-2-11/77291157.jpg" alt="+"></p>
-<p>选择New repository，下一步 </p>
-<p>在Repository name下面填写你要创建的地址，这个地址是就是你的域名，以github.io结尾。</p>
+<ul>
+<li><p>选择New repository，下一步 </p>
+</li>
+<li><p>在Repository name下面填写你要创建的地址，这个地址是就是你的域名，以github.io结尾。</p>
+</li>
+</ul>
 <h3 id="例如填写123-github-io-那你的博客地址就是123-github-io"><a href="#例如填写123-github-io-那你的博客地址就是123-github-io" class="headerlink" title="**例如填写123.github.io,那你的博客地址就是123.github.io"></a><font color="#B8860B">**例如填写123.github.io,那你的博客地址就是123.github.io</font></h3><p>完成创建</p>
-<p><br><br><br><br><br></p>
+<p><br><br><br></p>
 <h2 id="第四步，配置HEXO"><a href="#第四步，配置HEXO" class="headerlink" title="第四步，配置HEXO"></a>第四步，配置HEXO</h2><p><br></p>
-<h3 id="创建个文件夹，用来存放hexo文件，文件名自取"><a href="#创建个文件夹，用来存放hexo文件，文件名自取" class="headerlink" title="创建个文件夹，用来存放hexo文件，文件名自取"></a>创建个文件夹，用来存放hexo文件，文件名自取</h3><p> 右键该文件夹，选择      git bash here</p>
+<h3 id="创建个文件夹，用来存放hexo文件，文件名自取"><a href="#创建个文件夹，用来存放hexo文件，文件名自取" class="headerlink" title="创建个文件夹，用来存放hexo文件，文件名自取"></a>创建个文件夹，用来存放hexo文件，文件名自取</h3><p> <strong>右键该文件夹，选择      git bash here</strong></p>
 <p><img src="http://p3z6sclgk.bkt.clouddn.com/18-2-11/20522769.jpg" alt=""></p>
 <p>   输入：</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo --save</span><br></pre></td></tr></table></figure>
 <p>  初始化hexo基础配置文件。初始化时间大概需要1-2分钟，完成之后，再依次输入：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo init</span><br></pre></td></tr></table></figure>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo init</span><br><span class="line"></span><br><span class="line">npm install</span><br></pre></td></tr></table></figure>
 <p>这里就已经完成了，我们需要来测试一下</p>
 <p>输入：</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo g</span><br></pre></td></tr></table></figure>
-<p>这个是生成静态文件</p>
+<p><strong>这个是生成静态文件</strong></p>
 <p>再输入：</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo s</span><br></pre></td></tr></table></figure>
 <p><img src="http://p3z6sclgk.bkt.clouddn.com/18-2-11/61760806.jpg" alt=""></p>
-<p>这个是在计算机临时创建个本地预览的博客，此时，你在浏览器打开<a href="http://localhost:4000/" target="_blank" rel="noopener"> http://localhost:4000/</a>,会看到这样的画面。</p>
+<p><strong>这个是在计算机临时创建个本地预览的博客，</strong>此时，你在浏览器打开<a href="http://localhost:4000/" target="_blank" rel="noopener"> http://localhost:4000/</a>,会看到这样的画面。</p>
 <p><img src="http://p3z6sclgk.bkt.clouddn.com/18-2-11/97207829.jpg" alt=""></p>
 <p>对，没错，这个就是默认模板。那这界面你喜欢吗？可能我比较挑，我是不怎么喜欢！！</p>
 <p>那怎么办。当然是找个喜欢的主题模板啊！！</p>
 <p><br></p>
 <h3 id="去github上找主题"><a href="#去github上找主题" class="headerlink" title="去github上找主题"></a>去github上找<a href="https://github.com/search?utf8=%E2%9C%93&amp;q=hexo+theme&amp;type=" target="_blank" rel="noopener">主题</a></h3><p><br></p>
-<p>选择下载到zip</p>
+<p>1.选择下载到zip</p>
 <p><img src="http://p3z6sclgk.bkt.clouddn.com/18-2-11/69031757.jpg" alt=""></p>
-<p>然后解压到你的hexo文件夹/themes/</p>
+<p>2.然后解压到你的hexo文件夹/themes/</p>
 <p><img src="http://p3z6sclgk.bkt.clouddn.com/18-2-11/43158880.jpg" alt=""></p>
-<p>自己改个名字，然后，我们需要打开hexo根目录下的_config.yml文件,可以使用记事本打开</p>
-<h3 id="ctrl-f-搜索landscape"><a href="#ctrl-f-搜索landscape" class="headerlink" title="ctrl+f  搜索landscape"></a>ctrl+f  搜索landscape</h3><p><img src="http://p3z6sclgk.bkt.clouddn.com/18-2-11/52415926.jpg" alt=""></p>
-<p>把landscape改成你主题文件夹下的文件夹名，例如我的，是haha,我就改成haha！</p>
+<p>3.自己改个名字，然后，我们需要打开hexo根目录下的_config.yml文件,可以使用记事本打开</p>
+<h3 id="CTRL-F-搜索landscape"><a href="#CTRL-F-搜索landscape" class="headerlink" title="CTRL+F  搜索landscape"></a><code>CTRL+F</code>  搜索landscape</h3><p><img src="http://p3z6sclgk.bkt.clouddn.com/18-2-11/52415926.jpg" alt=""></p>
+<p>把<strong>landscape改成你主题文件夹下的文件夹名</strong>，例如我的，是haha,我就改成haha！</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo s</span><br></pre></td></tr></table></figure>
 <p>记得这是啥，对，本地预览，能检查错误的那种</p>
 <h3 id="http-localhost-4000"><a href="#http-localhost-4000" class="headerlink" title=" http://localhost:4000/"></a><a href="http://localhost:4000/" target="_blank" rel="noopener"> http://localhost:4000/</a></h3><p>看看你的主题是不是已经改回来了。</p>
 <p>如果没有的话，检查一下步骤，</p>
 <p>如果步骤没毛病，可能是你下载的主题有问题。那再去找个喜欢的试试。</p>
-<p><br><br><br><br><br></p>
+<p><br><br><br></p>
 <h2 id="第五步，设置页面"><a href="#第五步，设置页面" class="headerlink" title="第五步，设置页面"></a>第五步，设置页面</h2><h3 id="打开hexo根目录下的-config-yml文件"><a href="#打开hexo根目录下的-config-yml文件" class="headerlink" title="打开hexo根目录下的_config.yml文件"></a>打开hexo根目录下的_config.yml文件</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Site</span></span><br><span class="line">title: 网站标题</span><br><span class="line">subtitle: 副标题</span><br><span class="line">description: 个人签名</span><br><span class="line">author: 姓名</span><br><span class="line">language: zh-Hans      <span class="comment">#如果设置zh-Hans后仍出现乱码问题。需要更改文件的字符编码集为UTF-8,比如记事本打开之后，另存为---编辑字符编码集---UTF-8</span></span><br><span class="line">timezone:</span><br></pre></td></tr></table></figure>
 <p>划到最后，我们需要配置我们的远程储存库地址</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Deployment</span></span><br><span class="line"><span class="comment">## Docs: https://hexo.io/docs/deployment.html</span></span><br><span class="line">deploy:</span><br><span class="line">  <span class="built_in">type</span>: git</span><br><span class="line">  repository: git@github.com/82-Deluxe/82-Deluxe.github.io.git</span><br><span class="line">  branch: master</span><br></pre></td></tr></table></figure>
@@ -263,21 +279,27 @@
 <h3 id="注意：如果是第一次使用git，在使用git的时候会提示输入用户名和密码，用户名是自己的注册邮箱。"><a href="#注意：如果是第一次使用git，在使用git的时候会提示输入用户名和密码，用户名是自己的注册邮箱。" class="headerlink" title="注意：如果是第一次使用git，在使用git的时候会提示输入用户名和密码，用户名是自己的注册邮箱。"></a>注意：如果是第一次使用git，在使用git的时候会提示输入用户名和密码，用户名是自己的注册邮箱。</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git remote add origin 你的github仓库地址“</span><br></pre></td></tr></table></figure>
 <p>3、发布hexo到github page </p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo clean &amp;&amp; hexo g &amp;&amp; hexo d</span><br></pre></td></tr></table></figure>
-<p>这里hexo clean 是清清理一下缓存，<font color="#B8860B">如果发现上传之后，网站没更新，那就在上传之前加上这段。</font></p>
-<p>hexo g  生成静态文件，这里我们介绍过了</p>
-<p>hexo d  上传</p>
+<p><strong>这里<code>hexo clean</code> 是清理一下缓存,</strong></p>
+<font color="#B8860B">如果发现上传之后，网站没更新，那就在上传之前加上这段。</font> 
+
+<p><strong><code>hexo g</code>  生成静态文件，这里我们介绍过了</strong></p>
+<p><strong><code>hexo d</code> 上传</strong></p>
 <p>也可以用组合，例如上面的，或者</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo d -g</span><br></pre></td></tr></table></figure>
-<p>这里建议创建一个新的分支hexo，用于管理hexo文件。</p>
-<p>提交的的时候只提交hexo网站html、css、等源文件。而默认的master用来部署更新项目</p>
-<p>1.创建并切换到新建分支：</p>
+<h2 id=""><a href="#" class="headerlink" title=" "></a> <br></h2><ul>
+<li><p>这里建议创建一个新的分支hexo，用于管理hexo文件。</p>
+</li>
+<li><p>提交的的时候只提交hexo网站html、css、等源文件。而默认的master用来部署更新项目</p>
+</li>
+</ul>
+<p><strong>1.创建并切换到新建分支：</strong></p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git checkout -b hexo</span><br></pre></td></tr></table></figure>
-<p>2.将分支推送到远程仓库:</p>
+<p><strong>2.将分支推送到远程仓库:</strong></p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git push origin hexo</span><br></pre></td></tr></table></figure>
-<p>这时打开网站就能看到多了个hexo</p>
+<p>这时打开自己github的首页，点击<code>branches</code>，就能看到多了个<code>hexo</code></p>
 <p><img src="http://p3z6sclgk.bkt.clouddn.com/18-2-11/93269673.jpg" alt=""></p>
 <p><img src="http://p3z6sclgk.bkt.clouddn.com/18-2-11/54906126.jpg" alt=""></p>
-<p>我们把hexo 设置为默认</p>
+<p>我们把<code>hexo</code>设置为默认</p>
 <p><img src="http://p3z6sclgk.bkt.clouddn.com/18-2-11/2693015.jpg" alt=""></p>
 <p><img src="http://p3z6sclgk.bkt.clouddn.com/18-2-11/47676690.jpg" alt=""></p>
 <p>这样就完成了！！</p>
@@ -455,7 +477,7 @@
   <div class="outer">
     <div id="footer-info">
     	<div class="footer-left">
-    		&copy; 2018-02-11 21:32:52 [^_^]:Felix2857
+    		&copy; 2018-02-12 16:06:30 [^_^]:Felix2857
     	</div>
       	<div class="footer-right">
       		<a href="https://github.com/82-Deluxe/82-Deluxe.github.io" rel="external nofollow" target="_blank" rel="external nofollow">Felix2857</a> 's Blog
@@ -530,11 +552,11 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">随笔</a>
+                <a href="javascript:void(0)" class="js-tag color2">hexo教程</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">hexo教程</a>
+                <a href="javascript:void(0)" class="js-tag color3">随笔</a>
               </li>
             
             <div class="clearfix"></div>
