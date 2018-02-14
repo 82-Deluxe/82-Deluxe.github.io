@@ -26,7 +26,7 @@
 <meta property="og:image" content="http://p3z6sclgk.bkt.clouddn.com/18-2-14/32624292.jpg">
 <meta property="og:image" content="http://p3z6sclgk.bkt.clouddn.com/18-2-14/93587971.jpg">
 <meta property="og:image" content="http://p3z6sclgk.bkt.clouddn.com/18-2-14/3372158.jpg">
-<meta property="og:updated_time" content="2018-02-14T14:38:05.515Z">
+<meta property="og:updated_time" content="2018-02-14T14:56:02.640Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="如何用hexo写博客">
 <meta name="twitter:description" content="上篇我们讲到，如何给博客添加域名，所以这期我们来看看，正式的写出第一篇博客">
@@ -198,7 +198,7 @@
 <p><img src="http://p3z6sclgk.bkt.clouddn.com/18-2-11/20522769.jpg" alt=""></p>
 <p><br></p>
 <ul>
-<li>输入<code>hexo new &#39;你的博客路径名&#39;</code>，咋还本地计算机新建一个新的文章<ul>
+<li>输入<code>hexo new &#39;你的博客路径名&#39;</code>，在本地计算机新建一个新的文章<ul>
 <li>这里注意：<code>hexo new</code>可以简写成<code>hexo n</code></li>
 </ul>
 </li>
@@ -210,10 +210,10 @@
 <ul>
 <li><p>在<code>hexo/source/_posts目录下</code></p>
 <ul>
-<li>这些<code>.md</code>格式的就是我们需要编辑的文件，如果你有相关编辑软件那就直接打开，没有的话也可以使用记事本打开</li>
+<li>这些<code>.md</code>格式的就是我们需要编辑的文件，如果你有相关编辑软件那就直接打开，没有的话也可以<strong>使用记事本打开</strong></li>
 </ul>
 <blockquote>
-<p>PS:.md格式的文件就是需要我们              学习Markdown语法来编写文章，后续会更新相关教程</p>
+<p>PS:.md格式的文件就是需要我们学习Markdown语法来编写文章，后续会更新相关教程</p>
 </blockquote>
 </li>
 </ul>
@@ -222,7 +222,7 @@
 <p><img src="http://p3z6sclgk.bkt.clouddn.com/18-2-14/65782560.jpg" alt=""></p>
 <p><br></p>
 <ul>
-<li>我们打开它，可以看见它已经默认敲上了几行</li>
+<li>我们打开    如何用hexo写博客.md  ，可以看见它已经默认敲上了几行</li>
 </ul>
 <p><img src="http://p3z6sclgk.bkt.clouddn.com/18-2-14/54149989.jpg" alt=""></p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">title 网站标题；</span><br><span class="line">subtitle 网站副标题；</span><br><span class="line">data: 时间</span><br><span class="line">cagtegories: 分类</span><br><span class="line">description 网站描述，在搜索引擎中可被搜索的信息，可以配置描述关键字；</span><br><span class="line">tags: 标签</span><br></pre></td></tr></table></figure>
@@ -235,30 +235,26 @@
 </li>
 </ul>
 <p><img src="http://p3z6sclgk.bkt.clouddn.com/18-2-14/22830934.jpg" alt=""></p>
-<p>打开<code>hexo/scaffolds</code>,看到三个文件，这三个文件都是模板。你可以一次打开看看。</p>
+<p>打开<code>hexo/scaffolds</code>,看到三个文件，这三个文件都是模板。你可以依次打开看看。对照一下有哪些区别。这次我们需要改的是</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">post.md</span><br></pre></td></tr></table></figure>
+<p><strong>因为我们默认设置就是以这个为默认模板</strong></p>
 <ul>
 <li><font color="#FF9575CD">打开<code>post.md</code>，编辑你想要的格式，相关内容上面代码框已经给出</font>
 
 </li>
 </ul>
 <p><img src="http://p3z6sclgk.bkt.clouddn.com/18-2-14/34858072.jpg" alt=""></p>
-<p>这里我推荐一款Markdown的编辑软件，叫做CMD Markdown，界面十分好看，而且可以实时预览，很方便。</p>
+<p><strong>这里我推荐一款Markdown的编辑软件，叫做’CMD Markdown’，界面十分好看，而且可以实时预览，很方便。</strong></p>
 <p><img src="http://p3z6sclgk.bkt.clouddn.com/18-2-14/30104138.jpg" alt=""></p>
 <p><br></p>
-<p><strong>我给个web版的CMD Markdown 吧，点击<a href="https://www.zybuluo.com/mdeditor" target="_blank" rel="noopener">这里</a>打开</strong></p>
+<p><strong>我给个网页版的 CMD Markdown 吧，点击<a href="https://www.zybuluo.com/mdeditor" target="_blank" rel="noopener">这里</a>打开，不用下载就能使用</strong></p>
 <p><br><br><br></p>
 <hr>
 <p><br></p>
 <h2 id="第二步，编写博客"><a href="#第二步，编写博客" class="headerlink" title="第二步，编写博客"></a>第二步，编写博客</h2><p><br></p>
-<ul>
-<li>首先我们按照下面的内容填写自己想要的分类</li>
-</ul>
-<p><img src="http://p3z6sclgk.bkt.clouddn.com/18-2-14/32624292.jpg" alt=""></p>
-<ul>
-<li>我们在编写正文的时候，需要用到<code>内容隐藏</code>，为什么呢<ul>
+<h3 id="首先我们按照下面的内容填写自己想要的分类"><a href="#首先我们按照下面的内容填写自己想要的分类" class="headerlink" title="* 首先我们按照下面的内容填写自己想要的分类"></a>* 首先我们按照下面的内容填写自己想要的分类</h3><p><img src="http://p3z6sclgk.bkt.clouddn.com/18-2-14/32624292.jpg" alt=""></p>
+<h3 id="我们在编写正文的时候，需要用到内容隐藏，为什么呢"><a href="#我们在编写正文的时候，需要用到内容隐藏，为什么呢" class="headerlink" title="* 我们在编写正文的时候，需要用到内容隐藏，为什么呢"></a>* 我们在编写正文的时候，需要用到<code>内容隐藏</code>，为什么呢</h3><ul>
 <li>因为我们不想要文章占满整个屏幕，需要隐藏一些内容，这样会使界面变得整洁</li>
-</ul>
-</li>
 </ul>
 <p><br></p>
 <ul>
@@ -288,6 +284,7 @@
 </ul>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo clean</span><br><span class="line"></span><br><span class="line">hexo g -d</span><br></pre></td></tr></table></figure>
 <p><strong>这样，我们的文章就被上传上去了。打开自己的博客地址。上去看看怎么样</strong></p>
+<p><br></p>
 <font color="#B8860B">切记，Hexo文件夹不要动，不要删除会同步的有用的图片什么的，否则下次同步，将会把你服务器上的文件一同删除</font>
 
 <p><br></p>
@@ -479,7 +476,7 @@
   <div class="outer">
     <div id="footer-info">
     	<div class="footer-left">
-    		&copy; 2018-02-14 22:39:47 [^_^]:Felix2857
+    		&copy; 2018-02-14 22:56:19 [^_^]:Felix2857
     	</div>
       	<div class="footer-right">
       		<a href="https://github.com/82-Deluxe/82-Deluxe.github.io" rel="external nofollow" target="_blank" rel="external nofollow">Felix2857</a> 's Blog
