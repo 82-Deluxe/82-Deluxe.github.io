@@ -4,6 +4,41 @@
 
     
   <url>
+    <loc>https://82-deluxe.github.io/2018/02/11/hexo-github-%E5%85%8D%E8%B4%B9%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</loc>
+    <lastmod>2018-02-19T05:50:27.732Z</lastmod>
+    <data>
+        <display>
+        <title>hexo+github 免费搭建个人博客</title>
+        <pubTime>2018-02-11T08:54:35.000Z</pubTime>
+        
+        <tag>hexo教程</tag>
+         
+         
+           
+             
+              <breadCrumb title="教程" url="https://82-deluxe.github.io/categories/%E6%95%99%E7%A8%8B/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://82-deluxe.github.io/2018/02/19/Hexo%E5%AD%A6%E4%B9%A0%E6%89%8B%E5%86%8C%EF%BC%88%E4%BA%8C%EF%BC%89---%E7%BB%99%E5%8D%9A%E5%AE%A2%E6%8F%92%E6%9C%AC%E7%AB%99%E5%8D%9A%E5%AE%A2%E9%93%BE%E6%8E%A5/</loc>
+    <lastmod>2018-02-19T05:26:34.225Z</lastmod>
+    <data>
+        <display>
+        <title></title>
+        <pubTime>2018-02-19T05:23:51.733Z</pubTime>
+        
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>https://82-deluxe.github.io/2018/02/13/%E5%9F%9F%E5%90%8D/</loc>
     <lastmod>2018-02-19T05:23:15.217Z</lastmod>
     <data>
@@ -30,26 +65,6 @@
         <display>
         <title>如何用hexo写博客</title>
         <pubTime>2018-02-13T16:18:41.000Z</pubTime>
-        
-        <tag>hexo教程</tag>
-         
-         
-           
-             
-              <breadCrumb title="教程" url="https://82-deluxe.github.io/categories/%E6%95%99%E7%A8%8B/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://82-deluxe.github.io/2018/02/11/hexo-github-%E5%85%8D%E8%B4%B9%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</loc>
-    <lastmod>2018-02-19T05:18:00.310Z</lastmod>
-    <data>
-        <display>
-        <title>hexo+github 免费搭建个人博客</title>
-        <pubTime>2018-02-11T08:54:35.000Z</pubTime>
         
         <tag>hexo教程</tag>
          
