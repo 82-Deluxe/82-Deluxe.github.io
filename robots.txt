@@ -9,5 +9,5 @@ Disallow: /fonts/
 Disallow: /vendors/
 Disallow: /fancybox/
 
-Sitemap: http://tigerliu.site/sitemap.xml
-Sitemap: http://tigerliu.site/baidusitemap.xml
+Sitemap: https://82-deluxe.github.io/
+Sitemap: https://82-deluxe.github.io/
